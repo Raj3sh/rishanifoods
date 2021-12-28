@@ -1,0 +1,45 @@
+.header-content > h3 {
+  font-family: "Tangerine", serif;
+  font-size: 96px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.parallax-header {
+  background: #000;
+  background: url(../../../assets/contact-us-banner.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-content {
+  padding: 100px 0 150px 0;
+}
+
+.content {
+  margin-top: -60px;
+  background: #fff;
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.content .left {
+  padding-top: 20px;
+}
+
+.content .right {
+  padding: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.content .bottom {
+  background: #dc3545;
+  padding: 20px;
+}
+
+.primary-color {
+  color: #dc3545;
+}

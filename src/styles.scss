@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Roboto", serif;
+}
+
+.bg-indigo {
+  background-color: #005051;
+  background-color: #9a6a62;
+  //   background-color: $bs-green;
+}
+
+.contact-us-icon {
+  line-height: 98px;
+  height: 100px;
+  width: 100px;
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding-left: 26px;
+}
