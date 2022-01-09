@@ -1,7 +1,15 @@
 .contact-us-banner {
-    background-image: url("^assets/contact-us-banner.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    height: 30rem;
+  background-image: url("^assets/contact-us-banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 30rem;
+}
+
+.flex-even {
+  flex: 1;
+}
+
+.address, .phone, .email {
+    min-height: 18rem;
 }

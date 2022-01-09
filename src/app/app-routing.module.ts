@@ -20,8 +20,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
-  ], // { scrollPositionRestoration: "enabled" } can be is to take user to the top of the page with route change
+    RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" }),
+  ], // { scrollPositionRestoration: "enabled" } is to take user to the top of the page with route change
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -1,27 +1,27 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" style="width: min-content" href="/">
-        <span class="fw-bold fs-3">
-          <img src="assets/logos/Rishani Foods-logos_white.png" alt="Rishani Foods" class="d-inline-block" style="height: 4.8rem;">
-          Rishani Foods
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" style="width: 3.8rem;" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars fa-2x text-white" [ngClass]="{ 'd-none': navbarOpen }"></i>
-        <i class="fas fa-times fa-2x text-white" [ngClass]="{ 'd-none': !navbarOpen }"></i>
-      </button>
-      <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/who-are-we" (click)="toggleNavbar()">Who are we</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/products" (click)="toggleNavbar()">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/contact-us" (click)="toggleNavbar()">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="width: min-content" href="/">
+      <span class="fw-bold fs-3">
+        <img src="assets/logos/Rishani Foods-logos_white.png" alt="Rishani Foods" class="d-inline-block" style="height: 2.8rem;">
+        Rishani Foods
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" style="width: 2.8rem;" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white" [ngClass]="{ 'd-none': navbarOpen }"></i>
+      <i class="fas fa-times text-white" [ngClass]="{ 'd-none': !navbarOpen }"></i>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/who-are-we" (click)="toggleNavbar()">Who are we</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/products" (click)="toggleNavbar()">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us" (click)="toggleNavbar()">Contact Us</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
