@@ -11,6 +11,7 @@ import { ProductsComponent } from './component/products/products.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
 import { PrivacyComponent } from './component/privacy/privacy.component';
 import { TermsAndConditionsComponent } from './component/terms-and-conditions/terms-and-conditions.component';
+import { SurveyComponent } from './component/survey/survey.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TermsAndConditionsComponent } from './component/terms-and-conditions/te
     ProductsComponent,
     ContactUsComponent,
     PrivacyComponent,
-    TermsAndConditionsComponent
+    TermsAndConditionsComponent,
+    SurveyComponent
   ],
   imports: [
     BrowserModule,

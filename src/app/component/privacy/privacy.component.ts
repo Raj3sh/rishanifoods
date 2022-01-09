@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyComponent implements OnInit {
 
+  siteUrl = "https://www.kryptx.in";
+  contactEmail ="rishanifoods@gmail.com";
   constructor() { }
 
   ngOnInit(): void {

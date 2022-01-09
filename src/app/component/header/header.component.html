@@ -1,10 +1,12 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="assets/logos/Rishani Foods-logos_white.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-            Rishani Foods
-        </a>
-      <button class="navbar-toggler" type="button" style="max-width: 1rem;" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" style="width: min-content" href="/">
+        <span class="fw-bold fs-3">
+          <img src="assets/logos/Rishani Foods-logos_white.png" alt="Rishani Foods" class="d-inline-block" style="height: 4.8rem;">
+          Rishani Foods
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" style="width: 3.8rem;" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars fa-2x text-white" [ngClass]="{ 'd-none': navbarOpen }"></i>
         <i class="fas fa-times fa-2x text-white" [ngClass]="{ 'd-none': !navbarOpen }"></i>
       </button>

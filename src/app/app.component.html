@@ -1,7 +1,7 @@
-<div class="d-flex flex-column justify-content-between bg-light bg-gradient">
+<div class="d-flex flex-column justify-content-between site-bg">
   <app-header></app-header>
-  <div class="min-hv-100 mt-2">
-    <router-outlet></router-outlet>
+  <div class="min-hv-100" style="padding-top: 6.3rem;">  <!-- This padding is needed for fixed-top navbar-->
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
   </div>  
   <app-footer></app-footer>
 </div>
