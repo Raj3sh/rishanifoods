@@ -6,12 +6,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  showMenu = true;
+  navbarOpen = false;
+
   constructor() {}
 
   ngOnInit() {}
 
   toggleNavbar() {
-    this.showMenu = !this.showMenu;
+    this.navbarOpen = !this.navbarOpen;
   }
 }

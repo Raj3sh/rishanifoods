@@ -3,6 +3,12 @@ body {
   font-family: "Roboto", serif;
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 .bg-indigo {
   background-color: #005051;
   background-color: #9a6a62;

@@ -9,6 +9,8 @@ import { HomeComponent } from './component/home/home.component';
 import { WhoAreWeComponent } from './component/who-are-we/who-are-we.component';
 import { ProductsComponent } from './component/products/products.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
+import { PrivacyComponent } from './component/privacy/privacy.component';
+import { TermsAndConditionsComponent } from './component/terms-and-conditions/terms-and-conditions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
     HomeComponent,
     WhoAreWeComponent,
     ProductsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PrivacyComponent,
+    TermsAndConditionsComponent
   ],
   imports: [
     BrowserModule,
