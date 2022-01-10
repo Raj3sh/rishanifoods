@@ -1,7 +1,0 @@
-.bg-transperent {
-    background-color: transparent !important;
-}
-
-.form-control:focus, .form-control:hover {
-    box-shadow: none !important;
-}

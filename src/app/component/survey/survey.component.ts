@@ -6,7 +6,7 @@ Survey.StylesManager.applyTheme("bootstrap");
 @Component({
   selector: "app-survey",
   templateUrl: "./survey.component.html",
-  styleUrls: ["./survey.component.css"],
+  styleUrls: ["./survey.component.scss"],
 })
 export class SurveyComponent implements OnInit {
   
@@ -15,7 +15,7 @@ export class SurveyComponent implements OnInit {
   surveyJSON = {
     focusFirstQuestionAutomatic: false,
     completedHtml:
-      "Thank you for your request {name}. We'll get in touch with you as soon as possible.",
+      "<div style='min-height:30rem;padding-top: 13rem;text-align: center;'>Thank you for your request {name}. We'll get in touch with you as soon as possible.</div>",
     pages: [
       {
         name: "contactUs",
@@ -25,6 +25,7 @@ export class SurveyComponent implements OnInit {
             name: "name",
             title: "Name",
             isRequired: true,
+            autoComplete: "name",
             placeHolder: "Please enter your name",
           },
           {
@@ -32,6 +33,8 @@ export class SurveyComponent implements OnInit {
             name: "email",
             title: "Email",
             isRequired: true,
+            inputType: "email",
+            autoComplete: "email",
             placeHolder: "Please enter your email",
           },
           {
@@ -67,16 +70,8 @@ export class SurveyComponent implements OnInit {
     "logo": "sv_logo",
     "logoImage": "sv_logo__image",
     "headerText": "sv_header__text",
-    "navigationButton": "",
+    "navigationButton": "btn btn-primary btn-lg",
     "completedPage": "",
-    "navigation": {
-      "complete": "btn btn-primary btn-lg",
-      "prev": "btn sv_prev_btn",
-      "next": "btn sv_next_btn",
-      "start": "btn sv_start_btn",
-      "preview": "btn sv_preview_btn",
-      "edit": "btn sv_edit_btn"
-    },
     "page": {
       "root": "",
       "title": "",
@@ -96,7 +91,7 @@ export class SurveyComponent implements OnInit {
       "number": "sv_q_num",
       "description": "small",
       "descriptionUnderInput": "small",
-      "requiredText": "sv_q_required_text",
+      "requiredText": "color-darkred",
       "comment": "form-control",
       "required": "",
       "titleRequired": "",
@@ -105,14 +100,14 @@ export class SurveyComponent implements OnInit {
       "formGroup": "form-group"
     },
     "error": {
-      "root": "alert alert-danger",
-      "icon": "glyphicon glyphicon-exclamation-sign",
-      "item": "",
+      "root": "",
+      "icon": "",
+      "item": "font-weight-bold color-darkred",
       "locationTop": "sv_qstn_error_top",
       "locationBottom": "sv_qstn_error_bottom"
     },
-    "comment": "form-control",
-    "text": "form-control",
+    "comment": "form-control-custom",
+    "text": "form-control-custom",
     "expression": "form-control"
   };
 
