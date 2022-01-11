@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-0">
   <div class="container-fluid">
-    <a class="navbar-brand" style="width: min-content" href="/">
+    <a class="navbar-brand" style="width: min-content" routerLink="/">
       <span class="fw-bold fs-3">
         <img src="assets/logos/Rishani Foods-logos_white.png" alt="Rishani Foods" class="d-inline-block" style="height: 2.8rem;">
         Rishani Foods
@@ -11,7 +11,7 @@
       <i class="fas fa-times text-white" [ngClass]="{ 'd-none': !navbarOpen }"></i>
     </button>
     <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" routerLink="/who-are-we" (click)="toggleNavbar()">Who are we</a>
         </li>

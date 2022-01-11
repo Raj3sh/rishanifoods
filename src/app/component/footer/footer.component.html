@@ -1,14 +1,14 @@
 <div class="container-fluid bg-dark text-white footer-container">
   <div class="row py-2 py-md-4 py-lg-5">
     <div class="col-xs-12 col-sm-5 pb-4">
-      <p class="labeltxt"><b>USEFUL LINKS</b></p>
-        <div class="d-flex gap-3">
-          <a routerLink="/privacy">Privacy</a>
+      <p><b>USEFUL LINKS</b></p>
+        <div class="d-flex justify-content-start">
+          <a class="pr-3" routerLink="/privacy">Privacy</a>
           <a routerLink="/terms-and-conditions">Terms & conditions</a>
         </div>
     </div>
     <div class="col-xs-12 col-sm-4 pb-4">
-      <p class="labeltxt"><b>CONTACT</b></p>
+      <p><b>CONTACT</b></p>
       <div class="footer-cnt-us editable-content-holder">
         <div class="footer-cnt-text footer-cnt-color editable-content">
           <b>Rishani Food Products</b><br />
@@ -24,24 +24,26 @@
           class="text-white"
           ><b>Vivekananda Poria</b></a><br />
           
-          <span class="material-icons align-middle">phone</span> : <a style="color: #ffffff" href="tel:9932556277">9932556277</a><br />
-          <span class="material-icons align-middle">whatsapp</span> : <a
-            style="color: #ffffff"
+          <span class="material-icons align-middle">phone</span> : <a class="text-white" href="tel:9932556277">9932556277</a><br />
+          <span class="material-icons align-middle">whatsapp</span> : <a class="text-white"
             target="_blank"
             href="https://wa.me/919932556277?text=I'm%20interested%20in%20your%20products%20for%20sale"
+            rel="noreferrer"
             >9932556277</a
           >
       </div>
     </div>
     <div class="col-xs-12 col-sm-3 pb-4">
-      <div class="d-flex gap-4">
+      <div class="d-flex justify-content-start">
         <i class="fab fa-facebook fa-2x"></i>
-        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-twitter fa-2x px-3"></i>
         <i class="fab fa-instagram fa-2x"></i>
       </div>
     </div>
   </div>
-  <div class="col">
-    © Copyrights {{ currentYear }} - {{ currentYear + 1 }}. Rajesh Das. All Rights Reserved.
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 pb-4">
+      © Copyrights {{ currentYear }} - {{ currentYear + 1 }}. Rajesh Das. All Rights Reserved.
+    </div>
   </div>
 </div>

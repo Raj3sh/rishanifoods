@@ -9,7 +9,6 @@ Survey.StylesManager.applyTheme("bootstrap");
   styleUrls: ["./survey.component.scss"],
 })
 export class SurveyComponent implements OnInit {
-  
   constructor() {}
 
   surveyJSON = {
@@ -59,56 +58,56 @@ export class SurveyComponent implements OnInit {
   };
 
   myCss = {
-    "root": "bg-transperent",
-    "container": "container bg-transperent",
-    "header": "panel-heading card-header",
-    "body": "panel-body card-block mt-4",
-    "bodyEmpty": "panel-body card-block mt-4 sv_body_empty",
-    "footer": "",
-    "title": "",
-    "description": "",
-    "logo": "sv_logo",
-    "logoImage": "sv_logo__image",
-    "headerText": "sv_header__text",
-    "navigationButton": "btn btn-primary btn-lg",
-    "completedPage": "",
-    "page": {
-      "root": "",
-      "title": "",
-      "description": "small"
+    root: "bg-transperent",
+    container: "container bg-transperent",
+    header: "panel-heading card-header",
+    body: "panel-body card-block mt-4",
+    bodyEmpty: "panel-body card-block mt-4 sv_body_empty",
+    footer: "",
+    title: "",
+    description: "",
+    logo: "sv_logo",
+    logoImage: "sv_logo__image",
+    headerText: "sv_header__text",
+    navigationButton: "btn btn-primary btn-lg",
+    completedPage: "",
+    page: {
+      root: "",
+      title: "",
+      description: "small",
     },
-    "row": "row pb-4",
-    "question": {
-      "mainRoot": "sv_qstn",
-      "flowRoot": "sv_q_flow sv_qstn",
-      "header": "",
-      "headerLeft": "title-left",
-      "content": "",
-      "contentLeft": "content-left",
-      "titleLeftRoot": "sv_qstn_left",
-      "title": "",
-      "titleExpandable": "sv_q_title_expandable",
-      "number": "sv_q_num",
-      "description": "small",
-      "descriptionUnderInput": "small",
-      "requiredText": "color-darkred",
-      "comment": "form-control",
-      "required": "",
-      "titleRequired": "",
-      "hasError": "has-error",
-      "indent": 20,
-      "formGroup": "form-group"
+    row: "row pb-4 px-3",
+    question: {
+      mainRoot: "sv_qstn",
+      flowRoot: "sv_q_flow sv_qstn",
+      header: "",
+      headerLeft: "title-left",
+      content: "",
+      contentLeft: "content-left",
+      titleLeftRoot: "sv_qstn_left",
+      title: "",
+      titleExpandable: "sv_q_title_expandable",
+      number: "sv_q_num",
+      description: "small",
+      descriptionUnderInput: "small",
+      requiredText: "color-darkred",
+      comment: "form-control",
+      required: "",
+      titleRequired: "",
+      hasError: "has-error",
+      indent: 20,
+      formGroup: "form-group",
     },
-    "error": {
-      "root": "",
-      "icon": "",
-      "item": "font-weight-bold color-darkred",
-      "locationTop": "sv_qstn_error_top",
-      "locationBottom": "sv_qstn_error_bottom"
+    error: {
+      root: "",
+      icon: "",
+      item: "font-weight-bold color-darkred",
+      locationTop: "sv_qstn_error_top",
+      locationBottom: "sv_qstn_error_bottom",
     },
-    "comment": "form-control-custom",
-    "text": "form-control-custom",
-    "expression": "form-control"
+    comment: "form-control",
+    text: "form-control",
+    expression: "form-control",
   };
 
   ngOnInit(): void {
@@ -116,9 +115,9 @@ export class SurveyComponent implements OnInit {
     surveyModel.onComplete.add((survey: Survey.SurveyModel, options: any) => {
       survey.sendResult("8a50452c-8b50-4d71-a495-dbd294ad8a37");
     });
-    Survey.SurveyNG.render("surveyElement", { 
+    Survey.SurveyNG.render("surveyElement", {
       model: surveyModel,
-      css: this.myCss
+      css: this.myCss,
     });
   }
 }
