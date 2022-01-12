@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import * as Survey from "survey-angular";
+// import * as Survey from "../../custom-types/survey.angular.d";
 
 Survey.StylesManager.applyTheme("bootstrap");
 
