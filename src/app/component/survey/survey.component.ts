@@ -70,7 +70,7 @@ export class SurveyComponent implements OnInit {
     logo: "sv_logo",
     logoImage: "sv_logo__image",
     headerText: "sv_header__text",
-    navigationButton: "btn btn-primary btn-lg",
+    navigationButton: "btn btn-custom btn-lg",
     completedPage: "",
     page: {
       root: "",
@@ -86,13 +86,13 @@ export class SurveyComponent implements OnInit {
       content: "",
       contentLeft: "content-left",
       titleLeftRoot: "sv_qstn_left",
-      title: "",
+      title: "site-font-color",
       titleExpandable: "sv_q_title_expandable",
       number: "sv_q_num",
       description: "small",
       descriptionUnderInput: "small",
       requiredText: "color-darkred",
-      comment: "form-control",
+      comment: "form-control-no-box-shadow",
       required: "",
       titleRequired: "",
       hasError: "has-error",
@@ -106,9 +106,9 @@ export class SurveyComponent implements OnInit {
       locationTop: "sv_qstn_error_top",
       locationBottom: "sv_qstn_error_bottom",
     },
-    comment: "form-control",
-    text: "form-control",
-    expression: "form-control",
+    comment: "form-control-no-box-shadow",
+    text: "form-control-no-box-shadow",
+    expression: "form-control-no-box-shadow",
   };
 
   ngOnInit(): void {

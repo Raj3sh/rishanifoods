@@ -1,3 +1,13 @@
+:root {
+  --c-site-primary-color:#273369;
+  --c-site-primary-hover-color:#3e7db3;
+  --c-site-font-color:#495057;
+}
+
+.site-font-color {
+  color: var(--c-site-font-color);
+}
+
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: "Roboto", serif;
@@ -10,8 +20,8 @@ picture {
 }
 
 .bg-indigo {
-  background-color: #005051;
-  background-color: #9a6a62;
+  background-color: var(--c-site-primary-color);
+  // background-color: #9a6a62;
   //   background-color: $bs-green;
 }
 
@@ -19,10 +29,23 @@ picture {
   line-height: 98px;
   height: 100px;
   width: 100px;
-  color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  background-color: var(--c-site-primary-hover-color);
   border-radius: 50%;
   padding-left: 26px;
+  cursor: pointer;
+}
+
+.contact-us-icon svg {
+  filter: invert(1);
+}
+
+.contact-us-icon:hover {
+  background-color: #ffffff;
+}
+
+.contact-us-icon:hover svg {
+  filter: invert(0);
 }
 
 .font-weight-bold {
@@ -31,4 +54,35 @@ picture {
 
 .color-darkred {
   color: firebrick !important;
+}
+
+.form-control-no-box-shadow {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--c-site-font-color);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control-no-box-shadow:focus, .form-control-no-box-shadow:hover {
+  border-color: var(--c-site-primary-hover-color);
+  box-shadow: none !important;
+}
+
+.btn-custom {
+  color: #FFFFFF;
+  background-color: var(--c-site-primary-color);
+}
+
+.btn-custom:hover {
+  color: #FFFFFF;
+  background-color: var(--c-site-primary-hover-color);
 }

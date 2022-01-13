@@ -1,6 +1,11 @@
+.header-content {
+  // height: 100vmin;
+  // width: 100vmax;
+}
+
 .header-content > h3 {
   font-family: "Tangerine", serif;
-  font-size: 96px;
+  font-size: 10vh;
   text-shadow: 4px 4px 4px #aaa;
 }
 
@@ -11,6 +16,8 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  // height: 100vh;
+  // aspect-ratio: 100vh/100vw;
 }
 
 .header-content {
@@ -20,4 +27,3 @@
 .negetive-margin-5 {
   margin-top: -5rem;
 }
-
