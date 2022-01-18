@@ -1,8 +1,9 @@
 import { Component, OnInit } from "@angular/core";
-import * as Survey from "survey-angular";
-// import * as Survey from "../../custom-types/survey.angular.d";
+import { SurveyModel } from "../../../../1.9.5/survey.angular.d";
 
-Survey.StylesManager.applyTheme("bootstrap");
+declare const Survey; // This is required for the component to load the actual object from CDN in runtime
+
+// Survey.StylesManager.applyTheme("modern");
 
 @Component({
   selector: "app-survey",
@@ -70,7 +71,7 @@ export class SurveyComponent implements OnInit {
     logo: "sv_logo",
     logoImage: "sv_logo__image",
     headerText: "sv_header__text",
-    navigationButton: "btn btn-custom btn-lg",
+    navigationButton: "btn-custom btn-lg",
     completedPage: "",
     page: {
       root: "",
@@ -113,7 +114,7 @@ export class SurveyComponent implements OnInit {
 
   ngOnInit(): void {
     let surveyModel = new Survey.Model(this.surveyJSON);
-    surveyModel.onComplete.add((survey: Survey.SurveyModel, options: any) => {
+    surveyModel.onComplete.add((survey: SurveyModel, options: any) => {
       survey.sendResult("8a50452c-8b50-4d71-a495-dbd294ad8a37");
     });
     Survey.SurveyNG.render("surveyElement", {
