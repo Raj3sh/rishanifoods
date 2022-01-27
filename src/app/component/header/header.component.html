@@ -1,25 +1,68 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-indigo py-0">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-site-primary py-0">
   <div class="container-fluid">
-    <a class="navbar-brand" style="width: min-content" (click)="navbarOpen=false" routerLink="/">
+    <a
+      class="navbar-brand"
+      style="width: min-content"
+      (click)="navbarOpen = false"
+      routerLink="/"
+    >
       <span class="fw-bold fs-3">
-        <img src="assets/logos/Rishani Foods-logos_white.webp" alt="Rishani Foods" height="45" width="45" class="d-inline-block">
-        Rishani Foods
+        <img
+          src="assets/logos/Rishani Foods-logos_white.webp"
+          alt="Rishani Food Products"
+          height="45"
+          width="45"
+          class="d-inline-block"
+        />
+        Rishani Food Products
       </span>
     </a>
-    <button class="navbar-toggler" type="button" style="width: 2.8rem;" (click)="toggleNavbar()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <img src="assets/icons/bars-solid.svg" height="48" width="48" [ngClass]="{ 'd-none': navbarOpen }" style="width: 2.8rem; height: auto; filter: invert(1);" alt="hamburger icon">
-      <img src="assets/icons/times-solid.svg" height="48" width="48" [ngClass]="{ 'd-none': !navbarOpen }" style="width: 2.8rem; height: auto; filter: invert(1);" alt="close menu icon">
+    <button
+      class="navbar-toggler"
+      type="button"
+      style="width: 2.8rem"
+      (click)="toggleNavbar()"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <img
+        src="assets/icons/bars-solid.svg"
+        height="48"
+        width="48"
+        [ngClass]="{ 'd-none': navbarOpen }"
+        style="width: 2.8rem; height: auto; filter: invert(1)"
+        alt="hamburger icon"
+      />
+      <img
+        src="assets/icons/times-solid.svg"
+        height="48"
+        width="48"
+        [ngClass]="{ 'd-none': !navbarOpen }"
+        style="width: 2.8rem; height: auto; filter: invert(1)"
+        alt="close menu icon"
+      />
     </button>
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: navbarOpen }"
+      id="navbarNav"
+    >
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/who-are-we" (click)="toggleNavbar()">Who are we</a>
+          <a class="nav-link" routerLink="/who-are-we" (click)="toggleNavbar()"
+            >Who are we</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/products" (click)="toggleNavbar()">Products</a>
+          <a class="nav-link" routerLink="/products" (click)="toggleNavbar()"
+            >Products</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us" (click)="toggleNavbar()">Contact Us</a>
+          <a class="nav-link" routerLink="/contact-us" (click)="toggleNavbar()"
+            >Contact Us</a
+          >
         </li>
       </ul>
     </div>

@@ -1,22 +1,15 @@
-.contact-us-banner {
-  background-image: url("^assets/contact-us-banner.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  height: 30rem;
-}
-
 .flex-even {
   flex: 1;
 }
 
-.address, .phone, .email {
-    min-height: 18rem;
-    h3 {
-      padding: 1rem 0;
-    }
-    p > span {
-      line-height: 1.75;
-    }
+.address,
+.phone,
+.email {
+  min-height: 18rem;
+  h3 {
+    padding: 1rem 0;
+  }
+  p > span {
+    line-height: 1.75;
+  }
 }
-

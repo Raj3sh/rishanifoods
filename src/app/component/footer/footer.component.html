@@ -2,10 +2,12 @@
   <div class="row py-2 py-md-4 py-lg-5">
     <div class="col-xs-12 col-sm-5 pb-4">
       <p><b>USEFUL LINKS</b></p>
-        <div class="d-flex justify-content-start">
-          <a class="pr-md-3 footer-links" routerLink="/privacy">Privacy</a>
-          <a class="footer-links" routerLink="/terms-and-conditions">Terms & conditions</a>
-        </div>
+      <div class="d-flex justify-content-start">
+        <a class="pr-3 footer-links" routerLink="/privacy">Privacy</a>
+        <a class="footer-links" routerLink="/terms-and-conditions"
+          >Terms & conditions</a
+        >
+      </div>
     </div>
     <div class="col-xs-12 col-sm-4 pb-4">
       <p><b>CONTACT</b></p>
@@ -20,30 +22,59 @@
           href="mailto:rishanifoods@gmail.com"
           target="_blank"
           class="text-white"
-          ><b>Vivekananda Poria</b></a><br />
-          
-          <span class="material-icons align-middle">phone</span> : <a class="footer-links" href="tel:9932556277">9932556277</a><br />
-          <span class="material-icons align-middle">whatsapp</span> : <a class="footer-links"
-            target="_blank"
-            href="https://wa.me/919932556277?text=I'm%20interested%20in%20your%20products%20for%20sale"
-            rel="noreferrer"
-            >9932556277</a
-          >
+          ><b>Vivekananda Poria</b></a
+        ><br />
+
+        <span class="material-icons align-middle">phone</span> :
+        <a class="footer-links" href="tel:9932556277">9932556277</a><br />
+        <span class="material-icons align-middle">whatsapp</span> :
+        <a
+          class="footer-links"
+          target="_blank"
+          href="https://wa.me/919932556277?text=I'm%20interested%20in%20your%20products%20for%20sale"
+          rel="noreferrer"
+          >9932556277</a
+        >
       </div>
     </div>
     <div class="col-xs-12 col-sm-3 pb-4">
-      <div class="d-flex justify-content-start">
-        <img src="assets/icons/facebook-square-brands.svg" height="48" width="48" class="footer-icons" alt="facebook icon">
-        <div class="d-block" style="width: 2rem;">&nbsp;</div>
-        <img src="assets/icons/twitter-square-brands.svg" height="48" width="48" class="footer-icons" alt="twitter icon">
-        <div class="d-block" style="width: 2rem;">&nbsp;</div>
-        <img src="assets/icons/instagram-square-brands.svg" height="48" width="48" class="footer-icons" alt="instagram icon">
+      <div class="d-flex justify-content-start justify-content-md-end">
+        <img
+          src="assets/icons/facebook-square-brands.svg"
+          height="48"
+          width="48"
+          class="footer-icons"
+          alt="facebook icon"
+        />
+        <div class="d-block" style="width: 2rem">&nbsp;</div>
+        <img
+          src="assets/icons/twitter-square-brands.svg"
+          height="48"
+          width="48"
+          class="footer-icons"
+          alt="twitter icon"
+        />
+        <div class="d-block" style="width: 2rem">&nbsp;</div>
+        <img
+          src="assets/icons/instagram-square-brands.svg"
+          height="48"
+          width="48"
+          class="footer-icons"
+          alt="instagram icon"
+        />
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12 pb-4">
-      © Copyrights {{ currentYear }} - {{ currentYear + 1 }}. Rajesh Das. All Rights Reserved.
+  <div class="row pb-4 text-shadow-black font-weight-bolder">
+    <div class="col-12">
+      <div class="d-sm-flex justify-content-start justify-content-sm-between">
+        <span
+          >© 2022 - {{ currentYear + 1 }} Rishani Food Products. All Rights
+          Reserved.
+        </span>
+        <div class="d-block d-sm-none py-2"></div>
+        <span>Developed by Rajesh Das</span>
+      </div>
     </div>
   </div>
 </div>
