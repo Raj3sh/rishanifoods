@@ -18,9 +18,11 @@
   width: 3rem;
   height: auto;
   filter: invert(1);
+  cursor: pointer;
 }
 
 // https://codepen.io/sosuke/pen/Pjoqqp :: to generate filter out of hex code
 .footer-icons:hover {
-  filter: invert(40%) sepia(88%) saturate(332%) hue-rotate(165deg) brightness(96%) contrast(94%);
+  filter: invert(40%) sepia(88%) saturate(332%) hue-rotate(165deg)
+    brightness(96%) contrast(94%);
 }

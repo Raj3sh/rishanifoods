@@ -11,13 +11,14 @@
 
 .parallax-header {
   background: #000;
-  background: url(../../../assets/home-banner-large.webp);
+  background: url(../../../assets/RishaniFoodProducts.jpg);
+  // background: url(../../../assets/home-banner-large.webp);
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 100vh;
-  // aspect-ratio: 100vh/100vw;
+  height: 100vh;
+  aspect-ratio: 100vh/100vw;
 }
 
 .header-content {
@@ -26,4 +27,14 @@
 
 .negetive-margin-5 {
   margin-top: -5rem;
+}
+
+.testimonials-img {
+  width: 6rem;
+  height: 7rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 32%;
 }

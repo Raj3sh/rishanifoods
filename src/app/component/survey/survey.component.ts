@@ -22,12 +22,19 @@ export class SurveyComponent implements OnInit {
         name: "contactUs",
         elements: [
           {
+            type: "html",
+            name: "header",
+            html: '<div class="h2 text-center pt-5">CONTACT US</div><div class="h5 text-center pb-5">Leave a feedback or ask a question</div>',
+            startWithNewLine: true,
+          },
+          {
             type: "text",
             name: "name",
             title: "Name",
             isRequired: true,
             autoComplete: "name",
             placeHolder: "Please enter your name",
+            startWithNewLine: true,
           },
           {
             type: "text",
@@ -37,6 +44,15 @@ export class SurveyComponent implements OnInit {
             inputType: "email",
             autoComplete: "email",
             placeHolder: "Please enter your email",
+            startWithNewLine: false,
+          },
+          {
+            type: "text",
+            name: "phone",
+            title: "Phone",
+            isRequired: true,
+            placeHolder: "Please enter your phone no",
+            startWithNewLine: false,
           },
           {
             type: "comment",
@@ -78,7 +94,7 @@ export class SurveyComponent implements OnInit {
       title: "",
       description: "small",
     },
-    row: "row pb-4 px-3",
+    row: "row pb-4",
     question: {
       mainRoot: "sv_qstn",
       flowRoot: "sv_q_flow sv_qstn",

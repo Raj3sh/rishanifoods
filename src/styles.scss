@@ -85,7 +85,11 @@ picture {
 
 .btn-custom:hover {
   color: #ffffff;
-  background-color: var(--c-site-primary-hover-color);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--c-site-primary-color),
+    firebrick
+  );
 }
 
 .small-title-2 {
@@ -163,3 +167,20 @@ picture {
 // }
 
 /************* CSS for replacing Bootstrap ************/
+
+.carousel-bg {
+  background-image: url("^assets/contact-us-banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: grey;
+  color: var(--white);
+  font-style: italic;
+  font-family: math;
+  background-blend-mode: multiply;
+}
+.slider-bg {
+  height: 20rem;
+  font-size: larger;
+  font-weight: 500;
+}
