@@ -49,11 +49,16 @@
         />
         <div class="d-block" style="width: 2rem">&nbsp;</div>
         <img
-          src="assets/icons/twitter-square-brands.svg"
+          src="assets/icons/whatsapp-brands.svg"
           height="48"
           width="48"
           class="footer-icons"
           alt="twitter icon"
+          (click)="
+            goToLink(
+              'https://wa.me/919932556277?text=I%20am%20interested%20in%20your%20products%20for%20sale'
+            )
+          "
         />
         <div class="d-block" style="width: 2rem">&nbsp;</div>
         <img
@@ -62,6 +67,7 @@
           width="48"
           class="footer-icons"
           alt="instagram icon"
+          (click)="goToLink('https://www.instagram.com/rishanifoods/')"
         />
       </div>
     </div>
