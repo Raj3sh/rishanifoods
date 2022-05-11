@@ -1,44 +1,64 @@
 <div class="container-sm pb-5">
-  <h1 class="text-center pb-5">Our Infrastructure</h1>
+  <h1 class="text-center py-5">Our Infrastructure</h1>
   <div class="imageTileContainer">
     <div class="p-2">
       <img
-        src="assets/factory/4.JPG"
+        src="assets/factory/4.webp"
         #factoryImg4
         (click)="imgClick(factoryImg4)"
         alt="Our Story Image"
+        fetchpriority="low"
+        width="320"
+        height="327"
+        loading="lazy"
       />
     </div>
     <div class="p-2">
       <img
-        src="assets/factory/1.JPG"
+        src="assets/factory/1.webp"
         #factoryImg1
         (click)="imgClick(factoryImg1)"
         alt="Our Story Image"
+        fetchpriority="low"
+        width="320"
+        height="327"
+        loading="lazy"
       />
     </div>
     <div class="p-2">
       <img
-        src="assets/factory/2.JPG"
+        src="assets/factory/2.webp"
         #factoryImg2
         (click)="imgClick(factoryImg2)"
         alt="Our Story Image"
+        fetchpriority="low"
+        width="320"
+        height="327"
+        loading="lazy"
       />
     </div>
     <div class="p-2">
       <img
-        src="assets/factory/5.JPG"
+        src="assets/factory/5.webp"
         #factoryImg5
         (click)="imgClick(factoryImg5)"
         alt="Our Story Image"
+        fetchpriority="low"
+        width="320"
+        height="327"
+        loading="lazy"
       />
     </div>
     <div class="p-2">
       <img
-        src="assets/factory/6.JPG"
+        src="assets/factory/6.webp"
         #factoryImg6
         (click)="imgClick(factoryImg6)"
         alt="Our Story Image"
+        fetchpriority="low"
+        width="320"
+        height="327"
+        loading="lazy"
       />
     </div>
   </div>
@@ -54,7 +74,13 @@
   >
 
   <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="imgModalImg" #imgModalImg />
+  <img
+    class="modal-content"
+    id="imgModalImg"
+    height="auto"
+    width="auto"
+    #imgModalImg
+  />
 
   <!-- Modal Caption (Image Text) -->
   <div id="imgModalCaption" #imgModalCaption></div>

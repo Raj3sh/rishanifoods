@@ -11,7 +11,7 @@ import { WhoAreWeComponent } from "./component/who-are-we/who-are-we.component";
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "about-us", component: WhoAreWeComponent },
-  { path: "products", component: ProductsComponent },
+  // { path: "products", component: ProductsComponent },
   { path: "infrastructure", component: InfraComponent },
   { path: "contact-us", component: ContactUsComponent },
   { path: "privacy", component: PrivacyComponent },
